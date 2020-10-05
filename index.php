@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/css.css">
   </head>
   <body>
-    <section id="principal">
+    <div id="Principal">
       <section id="cabecalho">
         <?php include_once("cabecalho.php"); ?>
       </section><!-- Fim topo-->
@@ -19,6 +19,6 @@
       <footer  id="rodape">
         
       </footer><!-- Fim rodape-->
-    </section><!-- Fim Principal-->
+    </div><!-- Fim Principal-->
   </body>
 </html>

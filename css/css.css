@@ -16,7 +16,7 @@ body {
 
 #cabecalho {
   width: auto;
-  height: 100px;
+  height: 166px;
   background: url(../imagens/fundo-menu.png);
 }
 
@@ -24,19 +24,23 @@ body {
   width: 100%;
 }
 
+.fundo_azul {
+  background: #28a5d9;
+}
+
  #menu-cima {
-  width: 1200px;
+  width: 960px;
   height: 20px;
   background: red;
   margin: 0 auto;
-  text-align: right;
   font-size: 10px;
 }
 
 #menu-cima ul {
   width: 300px;
-  background: blue;
   float: right;
+  text-align: right;
+  margin-right: 20px;
 }
 
 #menu-cima ul li {
@@ -46,5 +50,53 @@ body {
 
 #menu-cima ul li a{
   color: #000000;
+  text-decoration: none;
 
+}
+
+#menu-cima ul li a:hover{
+  color: yellow;
+  text-decoration: underline;
+}
+
+#cabecalho_meio {
+  width: 100%;
+  height: 110px;
+  position: relative;
+}
+
+#cabecalho_meio h1 {
+  text-indent: -9999px;
+  width: 175px;
+  height: 52px;
+  position: absolute;
+  top: 25px;
+  left: 150px;
+  background: url(../imagens/img-logo.png) no-repeat top right;
+  text-align: left;
+}
+
+.sacola {
+  background: url(../imagens/carrinho.png) no-repeat top right;
+  width: 300px;
+  font-size: 10px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.busca {
+  position: absolute;
+  width: 400px;
+  height: 35px;
+  text-align: right;
+  top: 40px;
+  left: 300px;
+}
+
+.busca input [type=search] {
+  width: 400px;
 }

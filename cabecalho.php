@@ -7,10 +7,10 @@
   </nav>
 </div>
 
-<div id="cabecalho_meio">
+<div id="cabecalho_meio" class="fundo_azul">
   <h1>Wanderson Timóteo - Desenvolvedor de Sistemas</h1>
-  <p>Nunhum item no seu carrinho de compras</p>
-  <section>
+  <p class="sacola">Nunhum item no seu carrinho de compras</p>
+  <section class="busca">
     <form action="">
       <label>
         <span>Buscar</span>
