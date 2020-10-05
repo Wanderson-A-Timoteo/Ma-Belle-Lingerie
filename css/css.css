@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#cabecalho {
+  width: auto;
+  height: 100px;
+  background: url(../imagens/fundo-menu.png);
+}
