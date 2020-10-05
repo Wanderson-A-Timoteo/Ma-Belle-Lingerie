@@ -16,7 +16,7 @@ body {
 
 #cabecalho {
   width: auto;
-  height: 166px;
+  height: 177px;
   background: url(../imagens/fundo-menu.png);
 }
 
@@ -142,4 +142,39 @@ body {
 
 #menu-principal ul li a:hover {
   color: red;
+}
+
+.banner {
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
+  
+}
+
+#corpo {
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 10px;
+}
+
+.categorias {
+  width: 219px;
+  height: auto;
+  float: left;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.categorias h2 {
+  width: 208px;
+  height: 19px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 16px;
 }

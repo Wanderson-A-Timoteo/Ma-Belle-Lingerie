@@ -13,7 +13,7 @@
       </section><!-- Fim topo-->
 
       <section id="corpo">
-        
+        <?php include_once("home.php"); ?>
       </section ><!-- Fim corpo-->
 
       <footer  id="rodape">
