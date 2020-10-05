@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/css.css">
   </head>
   <body>
-    <section id="Principal">
+    <section id="principal">
       <section id="cabecalho">
         <?php include_once("cabecalho.php"); ?>
       </section><!-- Fim topo-->

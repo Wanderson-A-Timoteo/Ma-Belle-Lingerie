@@ -3,8 +3,48 @@
   padding: 0;
 }
 
+body {
+  font-family: verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background: #f4f4f4;
+}
+
+#principal {
+  width: auto;
+  height: auto;
+}
+
 #cabecalho {
   width: auto;
   height: 100px;
   background: url(../imagens/fundo-menu.png);
+}
+
+#cabecalho_superior {
+  width: 100%;
+}
+
+ #menu-cima {
+  width: 1200px;
+  height: 20px;
+  background: red;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 10px;
+}
+
+#menu-cima ul {
+  width: 300px;
+  background: blue;
+  float: right;
+}
+
+#menu-cima ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+#menu-cima ul li a{
+  color: #000000;
+
 }
