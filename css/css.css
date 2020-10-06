@@ -178,3 +178,38 @@ body {
   color: #fff;
   font-size: 16px;
 }
+
+.categorias ul {
+  width: 219px;
+  list-style: none;
+}
+
+.categorias ul li a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.categorias ul li a:hover {
+  color: #333;
+}
+
+.categorias ul ul {
+  width: 100%;
+  background: #fff;
+}
+
+.categorias ul ul li {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0 10px 15px;
+}
+
+.categorias ul ul li a {
+  color: #666;
+  font-size: 12px;
+}
+
+.categorias ul ul li a:hover {
+  color: #00ccff;
+  font-size: 14px;
+}

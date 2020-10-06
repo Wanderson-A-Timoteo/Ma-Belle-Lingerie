@@ -6,7 +6,7 @@
     <section class="categorias">
         <h2 class="fundo_azul"> Categorias </h2>
         <nav>
-            <ul>
+            <ul class="fundo_azul">
                 <li><a href="#"> Categoria 1 </a></li>
                     <ul>
                         <li><a href="">. : Produto 1</a></li>
