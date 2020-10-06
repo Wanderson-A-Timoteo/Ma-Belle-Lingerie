@@ -45,7 +45,7 @@
                         </figure>
                         <span> R$ 37,90 </span>
                         <form action="">
-                            <input type="image" src="imagens/comprar.png" alt="Botão Comprar">
+                            <input type="submit" value="comprar">
                         </form>
                     </a>
                 </li>
@@ -57,7 +57,7 @@
                         </figure>
                         <span> R$ 37,90 </span>
                         <form action="">
-                            <input type="image" src="imagens/comprar.png" alt="Botão Comprar">
+                        <input type="submit" value="comprar">
                         </form>
                     </a>
                 </li>
@@ -69,7 +69,19 @@
                         </figure>
                         <span> R$ 37,90 </span>
                         <form action="">
-                            <input type="image" src="imagens/comprar.png" alt="Botão Comprar">
+                        <input type="submit" value="comprar">
+                        </form>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                            <img src="imagens/firebird_peq.png" alt="Curso de Firebird">
+                            <figcaption>Curso completo de Firebird</figcaption>
+                        </figure>
+                        <span> R$ 37,90 </span>
+                        <form action="">
+                        <input type="submit" value="comprar">
                         </form>
                     </a>
                 </li>
@@ -81,19 +93,7 @@
                         </figure>
                         <span> R$ 37,90 </span>
                         <form action="">
-                            <input type="image" src="imagens/comprar.png" alt="Botão Comprar">
-                        </form>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                            <img src="imagens/firebird_peq.png" alt="Firebird">
-                            <figcaption>Curso completo de Firebird</figcaption>
-                        </figure>
-                        <span> R$ 37,90 </span>
-                        <form action="">
-                            <input type="image" src="imagens/comprar.png" alt="Botão Comprar">
+                        <input type="submit" value="comprar">
                         </form>
                     </a>
                 </li>
