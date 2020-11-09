@@ -35,8 +35,9 @@
     </section>
 
     <div id="lado-direito">
-        <h3>Lista de Produtos</h3>
+        <h3 class="titulo fundo_azul">Lista de Produtos</h3>
         <section class="vitrine">
+            <h2> Categoria do Produto </H2>
             <ul>
                 <li>
                     <a href="#">
@@ -45,7 +46,7 @@
                         </figure>
                         <span> R$ 37,90 </span>
                         <form action="">
-                            <input type="submit" value="comprar">
+                            <input type="submit" value="">
                         </form>
                     </a>
                 </li>
@@ -57,7 +58,7 @@
                         </figure>
                         <span> R$ 37,90 </span>
                         <form action="">
-                        <input type="submit" value="comprar">
+                        <input type="submit" value="">
                         </form>
                     </a>
                 </li>
@@ -69,7 +70,7 @@
                         </figure>
                         <span> R$ 37,90 </span>
                         <form action="">
-                        <input type="submit" value="comprar">
+                        <input type="submit" value="">
                         </form>
                     </a>
                 </li>
@@ -81,7 +82,7 @@
                         </figure>
                         <span> R$ 37,90 </span>
                         <form action="">
-                        <input type="submit" value="comprar">
+                        <input type="submit" value="">
                         </form>
                     </a>
                 </li>
@@ -93,7 +94,7 @@
                         </figure>
                         <span> R$ 37,90 </span>
                         <form action="">
-                        <input type="submit" value="comprar">
+                        <input type="submit" value="">
                         </form>
                     </a>
                 </li>
