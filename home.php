@@ -1,6 +1,6 @@
 <div id="corpo-loja">
     <aside class="banner"> 
-        <img src="imagens/banner-meio.png" alt="Banner">
+        <img src="imagens/banner-meio.png" alt="Banner de Promoção">
     </aside>
 
     <section class="categorias">
@@ -40,8 +40,8 @@
             <ul>
                 <li>
                     <a href="#">
-                            <img src="imagens/firebird_peq.png" alt="Firebird">
-                            <figcaption>Curso completo de Firebird</figcaption>
+                            <img src="imagens/conjunto.png" alt="Conjunto">
+                            <figcaption>Conjunto Calvin Klein - Vermelho</figcaption>
                         </figure>
                         <span> R$ 37,90 </span>
                         <form action="">
@@ -52,8 +52,8 @@
 
                 <li>
                     <a href="#">
-                            <img src="imagens/firebird_peq.png" alt="Firebird">
-                            <figcaption>Curso completo de Firebird</figcaption>
+                            <img src="imagens/conjunto.png" alt="Conjunto">
+                            <figcaption>Conjunto Calvin Klein - Vermelho</figcaption>
                         </figure>
                         <span> R$ 37,90 </span>
                         <form action="">
@@ -64,8 +64,8 @@
 
                 <li>
                     <a href="#">
-                            <img src="imagens/firebird_peq.png" alt="Firebird">
-                            <figcaption>Curso completo de Firebird</figcaption>
+                            <img src="imagens/conjunto.png" alt="Conjunto">
+                            <figcaption>Conjunto Calvin Klein - Vermelho</figcaption>
                         </figure>
                         <span> R$ 37,90 </span>
                         <form action="">
@@ -76,8 +76,8 @@
 
                 <li>
                     <a href="#">
-                            <img src="imagens/firebird_peq.png" alt="Curso de Firebird">
-                            <figcaption>Curso completo de Firebird</figcaption>
+                            <img src="imagens/conjunto.png" alt="Conjunto">
+                            <figcaption>Conjunto Calvin Klein - Vermelho</figcaption>
                         </figure>
                         <span> R$ 37,90 </span>
                         <form action="">
@@ -88,8 +88,8 @@
 
                 <li>
                     <a href="#">
-                            <img src="imagens/firebird_peq.png" alt="Firebird">
-                            <figcaption>Curso completo de Firebird</figcaption>
+                            <img src="imagens/conjunto.png" alt="Conjunto">
+                            <figcaption>Conjunto Calvin Klein - Vermelho</figcaption>
                         </figure>
                         <span> R$ 37,90 </span>
                         <form action="">

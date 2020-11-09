@@ -213,3 +213,11 @@ body {
   color: #00ccff;
   font-size: 14px;
 }
+
+.vitrine {
+  margin: 10px 0;
+  padding: 5px;
+  width: 698px;
+  height: auto;
+  border: solid 1px #ccc;
+}
