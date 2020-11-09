@@ -17,7 +17,7 @@
       </section ><!-- Fim corpo-->
 
       <footer  id="rodape">
-        
+        <?php include_once("rodape.php"); ?>
       </footer><!-- Fim rodape-->
     </div><!-- Fim Principal-->
   </body>
