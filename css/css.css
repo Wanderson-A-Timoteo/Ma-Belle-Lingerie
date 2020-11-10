@@ -393,5 +393,24 @@ body {
 }
 
 .modelo-fabricante h3{
-  background: url();
+  font-size: 12px;
+  height: 42px;
+  background: url(../imagens/icon-conjunto-black.png) no-repeat left;
+  padding-left: 50px;
 }
+
+.modelo-fabricante span{
+  padding-left: 30px;
+}
+
+.modelo-fabricante h4{
+  font-size: 14px;
+  height: 42px;
+  background: url(../imagens/icon-calvin-klein.png) no-repeat left;
+  padding-left: 30px;
+}
+
+.modelo-fabricante #fabricante {
+  margin-left: 30px;
+}
+

@@ -46,10 +46,16 @@
                 <span> Valor: </span> <strong> R$ 37,90 </strong>
             </div>
             <div class="modelo-fabricante">
-                <h3> Conjunto Vermelho </h3>
+                <h3> 
+                    <span> Modelo: </span> 
+                    <strong> Conjunto Vermelho </strong>
+                </h3>
             </div>
             <div class="modelo-fabricante">
-                <h4> Calvin Klein </h4>
+                <h4> 
+                    <span> Fabricante: </span>
+                    <strong id="fabricante"> Calvin Klein </strong>
+                </h4>
             </div>
             <div id="descricao-rapida">
                 descrição do produto
