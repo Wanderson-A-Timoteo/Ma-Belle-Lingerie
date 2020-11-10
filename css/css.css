@@ -290,6 +290,7 @@ body {
   background: url(../imagens/comprar.png) no-repeat;
   border: 0;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 #rodape {
@@ -414,3 +415,42 @@ body {
   margin-left: 30px;
 }
 
+#descricao-rapida {
+  width: 370px;
+  height: 155px;
+  border: solid 1px #ccc;
+  float: left;
+  margin-top: 10px;
+  background: #FFF;
+  color: #666;
+  font-size: 12px;
+}
+
+#descricao-rapida h2 {
+  width: 365px;
+  color: #333;
+}
+
+#descricao-rapida p {
+  padding: 5px;
+}
+
+#comprar-produto {
+  width: 690px;
+  height: 45px;
+  border: solid 1px #ccc;
+  float: left;
+  margin-top: 10px;
+  background: #FFF;
+  padding-top: 4px;
+  text-align: right;
+  padding-right: 5px;
+  margin-bottom: 20px;
+}
+
+#comprar-produto input {
+  width: 125px;
+  height: 45px;
+  margin-top: 0;
+  background: url(../imagens/but-compra.png) no-repeat top right;
+}
