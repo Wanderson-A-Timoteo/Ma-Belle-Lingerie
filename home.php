@@ -1,6 +1,6 @@
 <div id="corpo-loja">
     <aside class="banner"> 
-        <img src="imagens/banner-meio.png" alt="Banner de Promoção">
+        <img src="imagens/banner-meio-promocao.png" alt="Banner de Promoção">
     </aside>
 
     <section class="categorias">

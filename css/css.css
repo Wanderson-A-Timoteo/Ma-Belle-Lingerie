@@ -35,7 +35,7 @@ body {
 
 #menu-cima {
     width: 960px;
-    height: 30px;
+    height: 100px;
     border-bottom: 1px solid #ccc;
     background: red;
     margin: 0 auto;
@@ -66,21 +66,22 @@ body {
   width: 100%;
   height: 110px;
   position: relative;
+  background: #000000;
 }
 
 #cabecalho_meio h1 {
   text-indent: -9999px;
-  width: 175px;
-  height: 52px;
+  width: 385px;
+  height: 100px;
   position: absolute;
-  top: 25px;
+  top: 5px;
   left: 150px;
-  background: url(../imagens/img-logo.png) no-repeat top right;
+  background: url(../imagens/img-logomarca.png) no-repeat top right;
   text-align: left;
 }
 
 .sacola {
-  background: url(../imagens/carrinho.png) no-repeat top right;
+  background: url(../imagens/carrinho-de-compras.svg) no-repeat top right;
   width: 300px;
   font-size: 10px;
   height: 25px;
@@ -88,16 +89,18 @@ body {
   top: 10px;
   right: 200px;
   text-align: right;
-  padding-right: 20px;
+  padding-right: 30px;
+  color: white;
 }
 
 .busca {
   position: absolute;
-  width: 400px;
+  width: 600px;
   height: 35px;
   text-align: right;
   top: 40px;
   left: 300px;
+  color: white;
 }
 
 .busca input [type=search] {
@@ -294,13 +297,15 @@ body {
 
 #rodape2 {
   width: 100%;
-  height: 180px;
+  height: 170px;
+  background: #000000;
+
 }
 
 #caixa-img {
   float: left;
   width: 380px;
-  height: 180px;
+  height: 170px;
 
 }
 
@@ -309,6 +314,8 @@ body {
   width: 380px;
   color: #fff;
   margin-left: 100px;
+  margin-top: 50px;
+  font-size: 16px;
 }
 
 .limpa {

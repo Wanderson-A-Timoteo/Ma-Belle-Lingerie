@@ -1,12 +1,13 @@
 <div class="limpa"> <!-- Esta classe apenas limpa o both para jogar o footer pra baixo --> </div>
 <div id="rodape2" class="fundo_azul">
 <div id="caixa-img">
-        <img src="imagens/footer-ma-belle-lingerie.png" alt="" srcset="">
+        <img src="imagens/ma-belle-lingerie-footer.png" alt="" srcset="">
     </div>
 
     <div id="caixa">
         <strong>Dados da empresa: </strong> <br>
-        Av Fernando Corrêa da Costa, Nº 2367 - Boa Esperança <br>
+        Av Fernando Corrêa da Costa, Nº 2367 <br> 
+        Boa Esperança <br>
         Cuiabá - MT <br>
         CEP: 78060-900 <br>
     </div>
