@@ -35,7 +35,7 @@ body {
 
 #menu-cima {
     width: 960px;
-    height: 100px;
+    height: 30px;
     border-bottom: 1px solid #ccc;
     background: red;
     margin: 0 auto;
@@ -237,6 +237,7 @@ body {
   width: 698px;
   height: auto;
   border: solid 1px #ccc;
+  float: left;
 }
 
 .vitrine h2{
@@ -320,4 +321,77 @@ body {
 
 .limpa {
   clear: both;
+}
+
+#cx-img-produto {
+  width: 310px;
+  height: 385px;
+
+  border: solid 1px #ccc;
+  padding: 2px;
+  background: #FFF;
+  margin-right: 10px;
+  float: left;
+}
+
+#cx-img-produto img {
+  border: 0;
+}
+
+#cx-titulo-produto {
+  width: 370px;
+  height: 110px;
+  float: left;
+  border: solid 1px #ccc;
+  background: #FFF;
+}
+
+#cx-titulo-produto h1{
+  padding: 5px;
+}
+
+#cx-titulo-produto a{
+  color: #333;
+  font-size:22px
+}
+
+#cx-titulo-produto a:hover{
+  color: red;
+}
+
+#cx-preco-produto {
+  width: 370px;
+  height: 45px;
+  float: left;
+  border: solid 1px #ccc;
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 5px;
+  background: #FFF;
+}
+
+#cx-preco-produto strong{
+  color: #333;
+  font-size: 26px;
+  margin-left: 15px;
+}
+
+#cx-preco-produto span{
+  color: #FF0000;
+  font-size: 18px;
+}
+
+.modelo-fabricante{
+  width: 180px;
+  height: 43px;
+  border: solid 1px #ccc;
+  float: left;
+  margin-top: 10px;
+  background: #FFF;
+  font-size: 14px;
+  margin: 2px;
+}
+
+.modelo-fabricante h3{
+  background: url();
 }
