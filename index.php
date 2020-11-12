@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma Belle Lingerie</title>
     <link rel="stylesheet" href="css/css.css">
+    <script type="text/javascript" src="js/abas.js"></script>
   </head>
   <body>
     <div id="Principal">
