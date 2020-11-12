@@ -407,7 +407,7 @@ body {
 .modelo-fabricante h4{
   font-size: 14px;
   height: 42px;
-  background: url(../imagens/icon-calvin-klein.png) no-repeat left;
+  background: url(../imagens/boneco.png) no-repeat left;
   padding-left: 30px;
 }
 
@@ -455,3 +455,84 @@ body {
   background: url(../imagens/but-compra.png) no-repeat top right;
 }
 
+#abas-geral{
+	width: 680px;
+	margin: 10px auto;
+	
+}
+
+ul.menu{
+	margin:0;
+	padding:0;
+	float: left;
+	list-style:none;
+	height: 32px;
+	border-bottom:1px solid #999;
+	width: 100%;
+}
+ul.menu li {
+	float: left;
+	margin:0;
+	padding:0;
+	height:31px;
+	line-height:31px;
+	border: 1px solid#999;
+	border-left:none;
+	margin-bottom:-1px;
+	background: e0e0e0;
+	overflow:hidden;
+	position:relative;	
+}
+ul.menu li a {
+	text-decoration:none;
+	color: #000;
+	display:block;
+	font-size:1.2em;
+	padding:0 20px;
+	border: 1px solid #FFF;
+	outline: none;
+	
+}
+ul.menu li a:hover {
+	background: #66ccff;	
+
+}
+ul.menu li.active, ul.menu li.active a:hover{
+	background: #FFF;
+	border-bottom:1px solid #FFF;
+}
+
+#box{
+	text-align:left;
+	border: 1px solid #999;
+	border-top: 5px;
+	clear: both;
+	float:left;
+	width: 680px;
+	background: #fff;
+	padding-left: 4px;
+	padding-right:7px;
+
+}
+
+.conteudo{
+	padding: 1px;
+	font-size: 1.2em;
+	
+}
+
+.conteudo h2 {
+  font-weight: normal;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ddd;
+  font-size: 1.8em;
+}
+
+#descricao h5{
+	font-size: 16px;
+
+}
+#descricao p{
+	font-size: 12px;
+	text-align: justify;
+	padding:10px 7px 5px 0;

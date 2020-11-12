@@ -76,6 +76,29 @@
                 </form>
             </div>
 
+            <section id="abas-geral">
+                <ul class="menu">
+                    <li><a href="#aba01">Descrição</a></li>
+                    <li><a href="#aba02">Conteúdo</a></li>
+                </ul>
+                <section id="box">
+                    <div id="aba01" class="conteudo">
+                        <article id="descricao">
+                            <h5>Descrição</52>
+                            <p>
+                                Sutiã: laterais largas <br>
+                                Calcinha: fio dental <br>
+                                Detalhes: lycra <br>
+                                Alças: Fina <br>
+                                Cor: Vermelho <br>
+                                Tamanho: M <br>
+                                Peso	0.100 kg <br>
+                                Dimensões	16 × 11 × 7 cm
+                            </p>
+                        </article>
+                    </div>
+                </section>
+            </section>
         </section>
     </div>
 </div>

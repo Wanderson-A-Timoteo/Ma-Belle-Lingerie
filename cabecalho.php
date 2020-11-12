@@ -7,7 +7,7 @@
   </nav>
 </div>
 
-<div id="cabecalho_meio" class="fundo_azul">
+<div id="cabecalho_meio">
   <h1>Ma Belle lingerie</h1>
   <p class="sacola">Nunhum item no seu carrinho de compras</p>
   <section class="busca">

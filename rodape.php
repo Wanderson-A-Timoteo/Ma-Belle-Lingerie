@@ -1,5 +1,5 @@
 <div class="limpa"> <!-- Esta classe apenas limpa o both para jogar o footer pra baixo --> </div>
-<div id="rodape2" class="fundo_azul">
+<div id="rodape2">
 <div id="caixa-img">
         <img src="imagens/ma-belle-lingerie-footer.png" alt="" srcset="">
     </div>
