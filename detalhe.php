@@ -58,16 +58,10 @@
                 </h4>
             </div>
             <div id="descricao-rapida">
-                <h2> Descrição do Produto </h2>
+                <h2> Descrição rápida </h2>
                 <p>
                     Sutiã: laterais largas <br>
                     Calcinha: fio dental <br>
-                    Detalhes: lycra <br>
-                    Alças: Fina <br>
-                    Cor: Vermelho <br>
-                    Tamanho: M <br>
-                    Peso	0.100 kg <br>
-                    Dimensões	16 × 11 × 7 cm
                 </p>
             </div>
             <div id="comprar-produto">
@@ -92,8 +86,8 @@
                                 Alças: Fina <br>
                                 Cor: Vermelho <br>
                                 Tamanho: M <br>
-                                Peso	0.100 kg <br>
-                                Dimensões	16 × 11 × 7 cm
+                                Peso 0.100 kg <br>
+                                Dimensões 16 × 11 × 7 cm
                             </p>
                         </article>
                     </div>
