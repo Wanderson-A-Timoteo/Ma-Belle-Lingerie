@@ -45,5 +45,8 @@
         </div>
       </div>
     </div>
+    <footer  id="rodape">
+        <?php include_once("rodape.php"); ?>
+      </footer><!-- Fim rodape-->
   </body>
 </html>
