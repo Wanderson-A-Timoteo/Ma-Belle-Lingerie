@@ -25,21 +25,19 @@ body {
 }
 
 .fundo_azul {
-  background: #28a5d9;
+  background:  rgb(255, 0, 200);
 }
 
 .fundo_principal {
   background: url(../imagens/fundo-menu.png);
 }
 
-
 #menu-cima {
-    width: 960px;
-    height: 30px;
-    border-bottom: 1px solid #ccc;
-    background: red;
-    margin: 0 auto;
-    text-align: center;
+  width: 960px;
+  height: 20px;
+  background: #FFF;
+  margin: 0 auto;
+  font-size: 12px;
   }
   
   #menu-cima ul {
@@ -49,6 +47,10 @@ body {
   
   #menu-cima ul li {
     display: inline;
+    float: right;
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 10px;
   }
 
 #menu-cima ul li a{
@@ -58,8 +60,10 @@ body {
 }
 
 #menu-cima ul li a:hover{
-  color: yellow;
-  text-decoration: underline;
+  color: white;
+  text-decoration: none;
+  background: rgb(255, 0, 200);
+  padding: 15px;
 }
 
 #cabecalho_meio {
@@ -144,7 +148,10 @@ body {
 }
 
 #menu-principal ul li a:hover {
-  color: red;
+  color: white;
+  text-decoration: none;
+  background: rgb(255, 0, 200);
+  padding: 13px;
 }
 
 .banner {
@@ -452,7 +459,7 @@ body {
   width: 125px;
   height: 45px;
   margin-top: 0;
-  background: url(../imagens/but-compra.png) no-repeat top right;
+  background: url(../imagens/botao-comprar.png) no-repeat top right;
 }
 
 #abas-geral{

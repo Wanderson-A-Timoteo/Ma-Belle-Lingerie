@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding:0;
+}
+
+body{
+  font-family: verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background: #f4f4f4;
+}
+
+#principal{
+  width: auto;
+  height: auto;
+}
+
+#cabecalho {
+  width: auto;
+  height: 177px;
+  background: url(../imagens/fundo-menu.png);
+}
+  
+#cabecalho_superior {
+  width: 100%;
+}
+  
+.fundo_azul {
+  background: #28a5d9;
+}
+  
+.fundo_principal {
+  background: url(../imagens/fundo-menu.png);
+}
+  
+#menu-cima {
+  width: 960px;
+  height: 20px;
+  background: #FFF;
+  margin: 0 auto;
+  font-size: 10px;
+}
+  
+#cabecalho_meio {
+  width: 100%;
+  height: 110px;
+  position: relative;
+  background: #000000;
+}
+  
+#cabecalho_meio h1 {
+  text-indent: -9999px;
+  width: 385px;
+  height: 100px;
+  position: absolute;
+  top: 5px;
+  left: 150px;
+  background: url(../imagens/img-logomarca.png) no-repeat top right;
+  text-align: left;
+}
+  
+.busca {
+  position: absolute;
+  width: 600px;
+  height: 35px;
+  text-align: right;
+  top: 40px;
+  left: 300px;
+  color: white;
+}
+  
+#cabecalho_inferior {
+  width: 100%;
+  line-height: 22px;
+  border-bottom: 1px solid #ccc;
+}
+
+#menu-principal {
+  width: 960px;
+  height: 30px;
+  padding-top: 5px;
+  margin: 0 auto;
+  text-align: center;
+}

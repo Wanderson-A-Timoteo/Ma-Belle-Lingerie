@@ -1,9 +1,11 @@
 <div id="cabecalho_superior">
   <nav id="menu-cima">
-    <li><a href="#">Minha Conta</a></li>
-    <li><a href="#">Meu Carrinho</a></li>
-    <li><a href="#">Logar</a></li>
-    <li><a href="#">Cadastrar</a></li>
+    <ul>
+      <li><a href="#">Minha Conta</a></li>
+      <li><a href="#">Meu Carrinho</a></li>
+      <li><a href="#">Logar</a></li>
+      <li><a href="#">Cadastrar</a></li>
+    </ul>
   </nav>
 </div>
 
