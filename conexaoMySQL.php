@@ -1,6 +1,7 @@
 <?php
 
     class conexaoMySQL {
+        
         protected $servidor;
         protected $usuario;
         protected $senha;
@@ -23,10 +24,9 @@
         // validando a conexao
         function conectar() {
             
-            $this->conexao = @mysqli_connect ($this->servidor, $this->usuario, $this->senha, $this->banco) or die ("Não foi possível conectar ao Banco de Dados".mysqli_error());
+            $this->conexao = @mysqli_connect ($this->servidor, $this->usuario, $this->senha) or die ("Não foi possível conectar com o SERVIDOR de Banco de Dados".mysqli_error());
             
-            $this->banco  = @mysqli_select_db($this->banco) or 
-										die("Não foi possível conectar com o Banco de dados".mysqli_error());
+            $this->banco = @mysqli_select_db($this->banco) or die("Não foi possível conectar com o Banco de dados".mysqli_error());
         }
 
         function executarSQL($sql) {
@@ -41,7 +41,7 @@
         }
 
         function contaDados($qry){
-			$this->totalDados = mysql_num_rows($qry);
+			$this->totalDados = mysqli_num_rows($qry);
 			return $this->totalDados;
 		}
         
