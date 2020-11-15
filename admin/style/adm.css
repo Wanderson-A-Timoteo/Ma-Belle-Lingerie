@@ -155,3 +155,47 @@ body{
 .limpa {
   clear: both;
 }
+
+#direito {
+  width: 800px;
+  float: left;
+  margin: 5px 0 0 5px;
+  border: solid 1px #ccc;
+}
+
+#direito {
+  text-align: center;
+}
+
+/** Tabela */
+
+table{
+  float: left;
+  border-collapse: collapse;
+  border: solid 1px #333;
+  background: #fff;
+  width: 100%;
+  margin-top: 8px;
+  text-align: center;
+}
+
+table thead{
+  font: 16px Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  color: white;
+  background: rgb(219, 45, 182);
+}
+
+table thead tr th{
+  padding: 3px 0;
+}
+
+table thead tr td {
+  padding: 3px;
+}
+
+table tbody tr:hover {
+  background:rgb(241, 166, 225);
+}
+
+/** Fim Tabela */

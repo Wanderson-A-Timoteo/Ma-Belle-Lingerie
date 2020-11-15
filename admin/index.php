@@ -23,7 +23,7 @@
                 $link = $_GET["link"];
 
                 $pag[1] = "home.php";
-                $pag[2] = "categoria.php";
+                $pag[2] = "lista/lista.php";
 
                 if (!empty($link)) {
                     if (file_exists($pag[$link])) {

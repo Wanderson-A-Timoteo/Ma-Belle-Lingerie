@@ -1,7 +1,7 @@
 <div id="sessao"> Categiria </div>
 <ul>
     <li><a href="#"> Cadastrar </a> </li>
-    <li><a href="#"> Listar/Editar </a> </li>
+    <li><a href="index.php?link=2"> Listar/Editar </a> </li>
 </ul>
 
 <div id="sessao"> Banner </div>
