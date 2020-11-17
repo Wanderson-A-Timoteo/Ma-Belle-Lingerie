@@ -24,19 +24,19 @@
         // validando a conexao
         function conectar() {
             
-            $this->conexao = @mysqli_connect ($this->servidor, $this->usuario, $this->senha) or die ("Não foi possível conectar com o SERVIDOR de Banco de Dados".mysqli_error());
+            $this->conexao = @mysqli_connect ($this->servidor, $this->usuario, $this->senha, $this->banco) or die ("Não foi possível conectar com o SERVIDOR de Banco de Dados".mysqli_error());
             
-            $this->banco = @mysqli_select_db($this->banco) or die("Não foi possível conectar com o Banco de dados".mysqli_error());
+            $this->banco = @mysqli_select_db($this->conexao, $this->banco) or die("Não foi possível conectar com o Banco de dados".mysqli_error());
         }
 
         function executarSQL($sql) {
             
-            $this->qry = @mysqli_query($sql) or die ("Erro ao executar o comando SQL: $sql <br>".mysqli_error());
+            $this->qry = @mysqli_query($this->conexao, $sql) or die ("Erro ao executar o comando SQL: $sql <br>".mysqli_error());
             return $this->qry;
         }
 
         function listar($qr) {
-        $this->dados= @mysqli_fetch_assoc($qr);
+			$this->dados= @mysqli_fetch_assoc($qr);
         return $this->dados;
         }
 

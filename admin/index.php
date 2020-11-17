@@ -24,6 +24,7 @@
 
                 $pag[1] = "home.php";
                 $pag[2] = "lista/lista.php";
+                $pag[3] = "formulario/formulario.php";
 
                 if (!empty($link)) {
                     if (file_exists($pag[$link])) {

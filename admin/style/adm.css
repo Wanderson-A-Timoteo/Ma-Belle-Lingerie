@@ -160,7 +160,6 @@ body{
   width: 800px;
   float: left;
   margin: 5px 0 0 5px;
-  border: solid 1px #ccc;
 }
 
 #direito {
@@ -199,3 +198,89 @@ table tbody tr:hover {
 }
 
 /** Fim Tabela */
+
+#formulario {
+  width: 900px;
+  background: #fff;
+  margin-top: 5px;
+  border: solid 1px  rgb(219, 45, 182);
+}
+
+#formulario h2{
+  color:  rgb(219, 45, 182);;
+}
+
+#formulario label{
+  display: block;
+}
+
+#formulario label span.titulo{
+  font: 15px Tahoma, Arial, Helvetica;
+  color:rgb(219, 45, 182);
+  display: block;
+  float: left;
+  width: 100%;
+  margin: 6px 4px;
+}
+
+#formulario label input[type=text], #formulario label input[type=password] {
+  padding: 6px 5px;
+  background: #fff;
+  border: solid 1px rgb(219, 45, 182);
+  width: 610px;
+  outline: none;
+}
+
+#formulario .dois-campos{
+  float: left;
+  padding: 4px 0;
+  width: 630px;
+  margin-bottom: 3px;
+  margin-left: 130px;
+}
+
+#formulario .dois-campos label{
+  float: left;
+  display: inline-table;
+  width: 310px;
+  margin-right: 5px;
+}
+
+#formulario .dois-campos label input[type=text] {
+  width: 280px;
+}
+
+#formulario .dois-campos label select {
+  padding: 5px;
+  width: 250px;
+  font: 15px Tahoma;
+  border: solid 1px rgb(219, 45, 182);
+}
+
+#formulario .tres-campos label{
+  display: inline-table;
+  width: 200px;
+  margin-right: 5px;
+}
+
+#formulario .tres-campos label input[type=text] {
+  width: 180px;
+}
+
+#formulario .tres-campos label select {
+  padding: 5px;
+  width: 180px;
+  font: 15px Tahoma;
+  border: solid 1px rgb(219, 45, 182);
+}
+
+#formulario .botao{
+  width: 120px;
+  height: 30px;
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+  background: rgb(219, 74, 188);
+  color: white;
+  font-size: 16px;
+}

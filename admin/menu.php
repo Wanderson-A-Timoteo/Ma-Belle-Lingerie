@@ -1,6 +1,6 @@
-<div id="sessao"> Categiria </div>
+<div id="sessao"> Categoria </div>
 <ul>
-    <li><a href="#"> Cadastrar </a> </li>
+    <li><a href="index.php?link=3"> Cadastrar </a> </li>
     <li><a href="index.php?link=2"> Listar/Editar </a> </li>
 </ul>
 
