@@ -23,7 +23,7 @@
                 $link = $_GET["link"];
 
                 $pag[1] = "home.php";
-                $pag[2] = "lista/lista.php";
+                $pag[2] = "lst/lst_categoria.php";
                 $pag[3] = "formulario/formulario.php";
 
                 if (!empty($link)) {
