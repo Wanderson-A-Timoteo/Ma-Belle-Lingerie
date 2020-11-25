@@ -3,7 +3,7 @@
 	<form action="./op/op_categoria.php" method="post" enctype="multipart/form-data">
 		<label>
 			<span class="titulo">Título da Categoria </span>
-			<input type="text" name="txt_categoria" id="txt_categoria">
+			<input type="text" name="txt_titulo" id="txt_titulo">
 		</label>
 		
 		<div class="dois-campos">
