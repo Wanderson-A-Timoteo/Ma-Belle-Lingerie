@@ -1,5 +1,5 @@
 <?php
-    include_once("../classes/Lista.php");
+    include_once("./classes/Lista.php");
     $lista = new Lista();
     $lista->setNumPagina($_GET["pg"]);
     $lista->setUrl("index.php?link=2");

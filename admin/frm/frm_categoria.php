@@ -1,43 +1,25 @@
 <div id="formulario">
-	<h2> Cadastro de alguma coisa </h2>
-	<form action="" method="post" enctype="multipart/form-data">
+	<h2> Cadastro de Categorias </h2>
+	<form action="./op/op_categoria.php" method="post" enctype="multipart/form-data">
 		<label>
-			<span class="titulo">Alguma coisa sozinho </span>
-			<input type="text" name="" id="">
+			<span class="titulo">Título da Categoria </span>
+			<input type="text" name="txt_categoria" id="txt_categoria">
 		</label>
 		
 		<div class="dois-campos">
 			<label>
-				<span class="titulo">Dois campos pequenos </span>
-				<input type="text" name="" id="">
+				<span class="titulo"> Ordem </span>
+				<input type="text" name="txt_ordem" id="txt_ordem">
 			</label>
 			<label>
-				<span class="titulo">Dois campos pequenos </span>
-				<select>
-					<option> selecione </option>
-				</select>
-			</label>
-		</div>
-		
-		<div class="tres-campos">
-			<label>
-				<span class="titulo">Três campos pequenos </span>
-				<input type="text" name="" id="">
-			</label>
-			<label>
-				<span class="titulo">Três campos pequenos </span>
-				<input type="text" name="" id="">
-			</label>
-			<label>
-				<span class="titulo">Três campos pequenos </span>
-				<select>
-					<option> selecione </option>
+				<span class="titulo"> Ativo </span>
+				<select name="txt_ativo" id="txt_ativo">
+					<option value="s"> Sim </option>
+					<option value="n"> Não </option>
 				</select>
 			</label>
 		</div>
 		
 		<input type="submit" value="Enviar" class="botao" />
-		
-		
 	</form>
 </div>

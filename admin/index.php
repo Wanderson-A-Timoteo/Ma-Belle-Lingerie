@@ -24,7 +24,7 @@
 
                 $pag[1] = "home.php";
                 $pag[2] = "lst/lst_categoria.php";
-                $pag[3] = "formulario/formulario.php";
+                $pag[3] = "frm/frm_categoria.php";
 
                 if (!empty($link)) {
                     if (file_exists($pag[$link])) {
