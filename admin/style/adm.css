@@ -169,7 +169,6 @@ body{
 /** Tabela */
 
 table{
-  float: left;
   border-collapse: collapse;
   border: solid 1px #333;
   background: #fff;
@@ -200,10 +199,12 @@ table tbody tr:hover {
 /** Fim Tabela */
 
 #formulario {
-  width: 900px;
+  width: 635px;
+  padding:3px;
   background: #fff;
   margin-top: 5px;
   border: solid 1px  rgb(219, 45, 182);
+  margin:0 auto;
 }
 
 #formulario h2{
@@ -227,32 +228,29 @@ table tbody tr:hover {
   padding: 6px 5px;
   background: #fff;
   border: solid 1px rgb(219, 45, 182);
-  width: 610px;
+  width: 595px;
   outline: none;
 }
 
-#formulario .dois-campos{
-  float: left;
-  padding: 4px 0;
-  width: 630px;
-  margin-bottom: 3px;
-  margin-left: 130px;
+#formulario .dois-campos, #formulario .tres-campos {
+	padding: 4px 0;
+	width: 630px;
+	margin-bottom: 3px;	
 }
 
 #formulario .dois-campos label{
-  float: left;
   display: inline-table;
-  width: 310px;
-  margin-right: 5px;
+  width: 305px;
+  margin-right: 8px;
 }
 
-#formulario .dois-campos label input[type=text] {
-  width: 280px;
+#formulario .dois-campos label input[type=text], #formulario label input[type=date]{
+	width: 280px;
 }
 
 #formulario .dois-campos label select {
   padding: 5px;
-  width: 250px;
+  width: 290px;
   font: 15px Tahoma;
   border: solid 1px rgb(219, 45, 182);
 }
@@ -269,7 +267,7 @@ table tbody tr:hover {
 
 #formulario .tres-campos label select {
   padding: 5px;
-  width: 180px;
+  width: 190px;
   font: 15px Tahoma;
   border: solid 1px rgb(219, 45, 182);
 }

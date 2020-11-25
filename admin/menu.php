@@ -5,10 +5,10 @@
 </ul>
 
 <div id="sessao"> Banner </div>
-<ul>
-    <li><a href="#"> Cadastrar </a> </li>
-    <li><a href="#"> Listar/Editar </a> </li>
-</ul>
+    <ul>
+		<li><a href="index.php?link=5"> Cadastrar </a> </li>
+		<li><a href="index.php?link=4"> Listar/Editar </a> </li>
+	</ul>
 
 <div id="sessao"> Administradores </div>
 <ul>
