@@ -39,7 +39,7 @@
             
         
 		}
-		
+		// Metodo mostra em um select as categorias do banco de dados no frm de cadastro de produto
 		public function comboCategoria($id){
 			$sql= "SELECT * FROM  categoria ";
 			$qry = self::executarSQL($sql);
@@ -55,6 +55,25 @@
 			}
 			
 		}
+		// Metodo para retornar a quantidade de categorias
+		public function totalRegistros($sql){
+			$qry = self::executarSQL($sql);
+			$total= self::contaDados($qry);
+			
+			return $total;
+		}
+
+		// Metodo para listar as categorias na home pegando pela posição (i) e não pelo linha como no comboCategoria que pega por linha no banco de dados
+		public function verCategorias($sql,$i){
+			$qry = mysql_query($sql);
+			
+			$this->id  				= mysql_result($qry,$i,"id_categoria");
+			$this->categoria  		= mysql_result($qry,$i,"categoria");
+			$this->slug_categoria  	= mysql_result($qry,$i,"slug_categoria");
+			$this->ordem_categoria  = mysql_result($qry,$i,"ordem_categoria");
+			$this->ativo_categoria  = mysql_result($qry,$i,"ativo_categoria");
+		}
+
     }
 
     class DadosBanner extends conexaoMySQL{

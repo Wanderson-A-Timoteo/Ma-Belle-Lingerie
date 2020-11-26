@@ -1,3 +1,11 @@
+<?php
+
+    include_once("admin/classes/DadosDoBanco.php");
+
+    $categoria = new DadosCategoria();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -14,7 +22,29 @@
       </section><!-- Fim topo-->
 
       <section id="corpo">
-        <?php include_once("detalhe.php"); ?>
+        <?php
+            $link = $_GET["link"];
+
+            $pag[1] = "home.php";
+            $pag[2] = "detalhe.php";
+          
+            if (!empty($link)) {
+                if (file_exists($pag[$link])) {
+                    
+                    include $pag[$link];
+
+                } else {
+                
+                    include "home.php";
+                
+                }
+
+            } else {
+
+                include "home.php";
+            }
+
+        ?>
       </section ><!-- Fim corpo-->
 
       <footer  id="rodape">
