@@ -11,17 +11,26 @@
                     $sql = "SELECT * FROM  categoria";
                     $total = $categoria->totalRegistros($sql);
                     for ($i = 0; $i < $total; $i++){
-                        $categoria->verCategorias($sql, $i)
+                        $categoria->verCategorias($sql, $i);
+                        $idcat = $categoria->getId();
 
                 ?>
-                <li><a href="#"> .:<?php echo $categoria->getCategoria() ?> </a></li>
+                <li><a href="#"> .:<?php echo $categoria->getCategoria(); ?> </a></li>
                     <ul>
-                        <li><a href="">. : Produto 1</a></li>
-                        <li><a href="">. : Produto 2</a></li>
-                        <li><a href="">. : Produto 3</a></li>
-                        <li><a href="">. : Produto 4</a></li>
+                    <?php
+                        $sql_prod = "SELECT * FROM produto WHERE id_categoria = '$idcat' ";
+                        $total_prod = $categoria->totalRegistros($sql_prod);
+                        for ($j = 0; $j < $total_prod; $j++){
+                            $produto-> verProdutos($sql_prod, $j);
+                    ?>
+                    <li> <a href="#"> <?php echo $produto->getTituloProduto(); ?> </a> </li>
+                    
+                    <?php } ?>
+                    
                     </ul>
+
                 <?php } ?>
+                
             </ul>
         </nav>
     </section>
