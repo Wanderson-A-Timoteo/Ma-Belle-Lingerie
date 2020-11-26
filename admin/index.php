@@ -26,7 +26,9 @@
                 $pag[2] = "lst/lst_categoria.php";
                 $pag[3] = "frm/frm_categoria.php";
                 $pag[4] = "lst/lst_banner.php";
-					      $pag[5] = "frm/frm_banner.php";
+                $pag[5] = "frm/frm_banner.php";
+                $pag[6] = "lst/lst_produto.php";
+					      $pag[7] = "frm/frm_produto.php";
 
                 if (!empty($link)) {
                     if (file_exists($pag[$link])) {
@@ -49,7 +51,7 @@
       </div>
     </div>
     <footer  id="rodape">
-        <?php include_once("rodape.php"); ?>
-      </footer><!-- Fim rodape-->
+      <?php include_once("rodape.php"); ?>
+    </footer><!-- Fim rodape-->
   </body>
 </html>

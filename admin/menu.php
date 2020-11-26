@@ -18,6 +18,6 @@
 
 <div id="sessao"> Produtos </div>
 <ul>
-    <li><a href="#"> Cadastrar </a> </li>
-    <li><a href="#"> Listar/Editar </a> </li>
+    <li><a href="index.php?link=7"> Cadastrar </a> </li>
+    <li><a href="index.php?link=6"> Listar/Editar </a> </li>
 </ul>

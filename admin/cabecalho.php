@@ -1,6 +1,3 @@
-<div id="cabecalho_superior">
-  <nav id="menu-cima"></nav>
-</div>
 
 <div id="cabecalho_meio">
   <h1>Ma Belle lingerie</h1>

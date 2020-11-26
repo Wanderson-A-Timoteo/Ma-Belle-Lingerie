@@ -240,17 +240,18 @@ table tbody tr:hover {
 
 #formulario .dois-campos label{
   display: inline-table;
-  width: 305px;
+  width: 270px;
   margin-right: 8px;
 }
 
 #formulario .dois-campos label input[type=text], #formulario label input[type=date]{
-	width: 280px;
+	width: 270px;
 }
+
 
 #formulario .dois-campos label select {
   padding: 5px;
-  width: 290px;
+  width: 270px;
   font: 15px Tahoma;
   border: solid 1px rgb(219, 45, 182);
 }

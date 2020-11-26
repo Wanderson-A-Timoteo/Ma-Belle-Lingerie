@@ -20,7 +20,7 @@
 
     <tbody>
         <tr>
-            <td colSpan="5"> <?php $lista->geraNumeros() ?> </td>
+            <td colSpan="5"> <?php $lista->geraNumeros(); ?> </td>
         </tr>
     </tbody>
 
