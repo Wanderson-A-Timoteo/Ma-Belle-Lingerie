@@ -38,7 +38,23 @@
             $this->ativo_categoria  = $linha["ativo_categoria"];
             
         
-        }
+		}
+		
+		public function comboCategoria($id){
+			$sql= "SELECT * FROM  categoria ";
+			$qry = self::executarSQL($sql);
+			
+			while($linha = self::listar($qry)){
+				if($id==$linha["id_categoria"]){
+					$selecionado = "selected='selected' ";
+				} else{
+					$selecionado = "";
+				}
+				
+				echo "<option value=$linha[id_categoria] $selecionado>$linha[categoria]</option>\n";
+			}
+			
+		}
     }
 
     class DadosBanner extends conexaoMySQL{

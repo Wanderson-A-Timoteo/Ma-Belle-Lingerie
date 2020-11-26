@@ -1,10 +1,12 @@
 <?php
+
+	include_once("./classes/DadosDoBanco.php");
+
 	$acao = $_GET["acao"];
 	$id	  = $_GET["id"];
 
 	if($acao !="" ){
 	
-		include_once("./classes/DadosDoBanco.php");
 		$dados = new DadosProduto();
 		$dados->setId($id);
 		$dados->mostrarDados();

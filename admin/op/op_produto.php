@@ -30,7 +30,7 @@
 	/***************************UPLOAD************************/
 
 	$extensoes_validas = array(".gif", ".png",".jpg",".jpeg");
-	$caminho_absoluto  = "C:\xampp\htdocs\php-mysql\admin\fotos";
+	$caminho_absoluto  = "C:/xampp/htdocs/php-mysql/admin/fotos";
 	
 	$nome_arquivo 		= $_FILES['img']['name'];
 	$arquivo_temporario = $_FILES['img']['tmp_name'];
@@ -62,7 +62,7 @@
 		$cad ->setDados("'$txt_id_categoria', '$txt_titulo', '$txt_preco', '$txt_fabricante', '$txt_modelo', '$txt_descricao', '$txt_conteudo', '$txt_slug_produto', '$txt_ativo','$txt_nomeimagem'");
 		$cad-> inserir();
 		
-		echo "<script type='text/javascript'> location.href='../principal.php?link=6' </script> ";
+		echo "<script type='text/javascript'> location.href='../index.php?link=6' </script> ";
 	}
 	
 	if($acao=="Alterar"){
