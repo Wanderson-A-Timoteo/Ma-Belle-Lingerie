@@ -76,5 +76,4 @@
 		echo "<script type='text/javascript'> location.href='../index.php?link=4' </script> ";
 	}
 
-
 ?>

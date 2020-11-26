@@ -41,4 +41,46 @@
         }
     }
 
+    class DadosBanner extends conexaoMySQL{
+		private $id, $titulo_banner, $alt, $url_banner, $ativo_banner, $imagem_banner;
+		
+		public function setId($id){
+			$this->id = $id;
+		}
+		public function getId(){
+			return $this-> id;
+		}
+		
+		public function getTituloBanner(){
+			return $this-> titulo_banner;
+		}
+		public function getAlt(){
+			return $this-> alt;
+		}
+		public function getUrlBanner(){
+			return $this-> url_banner;
+		}
+		public function getAtivo(){
+			return $this-> ativo_banner;
+		}
+		public function getImagem(){
+			return $this-> imagem_banner;
+		}
+		
+		public function mostrarDados(){
+			$sql= "SELECT * FROM  banner WHERE id_banner = '$this->id'";
+			$qry = self::executarSQL($sql);
+			$linha = self::listar($qry);
+			
+			$this->id  				= $linha["id_categoria"];
+			$this->titulo_banner  	= $linha["titulo_banner"];
+			$this->alt  			= $linha["alt"];
+			$this->url_banner  		= $linha["url_banner"];
+			$this->ativo_banner  	= $linha["ativo_banner"];
+			$this->imagem_banner  	= $linha["imagem_banner"];
+		
+		}
+	
+	}
+
 ?>

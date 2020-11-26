@@ -5,13 +5,15 @@
 	if($acao !="" ){
 	
 		include_once("./classes/DadosDoBanco.php");
-		$dados = new DadosCategoria();
+		$dados = new DadosBanner();
 		$dados->setId($id);
 		$dados->mostrarDados();
 		
-		$txt_titulo = $dados-> getCategoria();
-		$txt_ordem 	= $dados-> getOrdemCategoria();
-		$txt_ativo 	= $dados-> getAtivo();		
+		$txt_titulo = $dados-> getTituloBanner();
+		$txt_alt 	= $dados-> getAlt();
+		$txt_url 	= $dados-> getUrlBanner();	
+		$txt_ativo 	= $dados-> getAtivo();
+		$nome_imagem= $dados-> getImagem();		
 	
 	}
 
