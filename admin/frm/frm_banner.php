@@ -18,17 +18,26 @@
 ?>
 
 <div id="formulario">
-	<h2> Cadastro de Banners </h2>
-	<form action="./op/op_categoria.php" method="post" enctype="multipart/form-data">
+	<h2> Cadastro de Banner </h2>
+	<form action="./op/op_banner.php" method="post" enctype="multipart/form-data">
+	
+		<label class="imagem">
+			<span class="titulo">Selecione uma imagem </span>
+			<input type="file" name="img" >
+		</label>
+		
 		<label>
 			<span class="titulo">Título do Banner </span>
 			<input type="text" name="txt_titulo" id="txt_titulo" value="<?php echo $txt_titulo ?>">
 		</label>
-		
+		<label>
+			<span class="titulo">Alt do Banner </span>
+			<input type="text" name="txt_alt" id="txt_alt" value="<?php echo $txt_alt ?>">
+		</label>
 		<div class="dois-campos">
 			<label>
-				<span class="titulo">Ordem </span>
-				<input type="text" name="txt_ordem" id="txt_ordem" value="<?php echo $txt_ordem ?>">
+				<span class="titulo">url </span>
+				<input type="text" name="txt_url" id="txt_url" value="<?php echo $txt_url ?>">
 			</label>
 			<label>
 				<span class="titulo">Ativo </span>
@@ -40,6 +49,7 @@
 			</label>
 		</div>
 		
+		<input type="hidden" name="nome_imagem" value="<?php  echo $nome_imagem; ?>" />
 		<input type="hidden" name="id" value="<?php  echo $id; ?>" />
 		<input type="hidden" name="acao" value="<?php if ($acao!=""){ echo $acao;}else{echo "Inserir";} ?>" />
 		<input type="submit" value="<?php if ($acao!=""){ echo $acao;}else{echo "Inserir";} ?>" class="botao" />

@@ -1,5 +1,6 @@
 <?php
     include_once("../classes/manipulacaoDeDados.php");
+    include_once("../biblio.php");
 
     $acao = $_POST["acao"];
     $id	  = $_POST["id"];
@@ -20,7 +21,7 @@
         $cat ->setDados(" '$txt_titulo', '$slug_categoria', '$txt_ordem', '$txt_ativo'");
         $cat-> inserir();
         
-        echo "<script type='text/javascript'> location.href='../principal.php?link=2' </script> ";
+        echo "<script type='text/javascript'> location.href='../index.php?link=2' </script> ";
     }
 
     if($acao=="Alterar"){
