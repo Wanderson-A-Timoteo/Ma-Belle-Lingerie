@@ -3,6 +3,8 @@
     include_once("admin/classes/DadosDoBanco.php");
 
     $categoria = new DadosCategoria();
+    $produto = new DadosProduto();
+
 
 ?>
 

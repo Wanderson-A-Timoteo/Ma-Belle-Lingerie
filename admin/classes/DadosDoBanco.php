@@ -64,8 +64,8 @@
 		}
 
 		// Metodo para listar as categorias na home pegando pela posição (i) e não pelo linha como no comboCategoria que pega por linha no banco de dados
-		public function verCategorias($sql,$i){
-			$qry = mysql_query($sql);
+		public function verCategorias($sql, $i){
+			$qry = mysqli_query($sql);
 			
 			$this->id  				= mysql_result($qry,$i,"id_categoria");
 			$this->categoria  		= mysql_result($qry,$i,"categoria");
@@ -173,7 +173,7 @@
 		}
 		
 		public function mostrarDados(){
-			$sql= "SELECT c.*, p.* FROM categoria c,  produto p WHERE c.id_categoria=p.id_categoria and id_produto = '$this->id'";
+			$sql= "SELECT * FROM produto WHERE id_produto = '$this->id' ";
 			$qry = self::executarSQL($sql);
 			$linha = self::listar($qry);
 			
@@ -202,7 +202,7 @@
 		
 		
 		public function verProdutos($sql,$i){
-			$qry = mysql_query($sql);
+			$qry = mysqli_query($sql);
 			
 			
 			$this->id  				= mysql_result($qry,$i,"id_produto");
