@@ -16,7 +16,7 @@
             $this->servidor = "localhost";
             $this->usuario = "root";
             $this->senha = "";
-            $this->banco = "mabelle";
+            $this->banco = "bd_mabelle";
             
             self::conectar();
         }
