@@ -9,21 +9,21 @@
         <nav>
             <ul class="fundo_azul">
                 <?php
-                    $sql = "SELECT * FROM  categoria";
-                    $total = $categoria->totalRegistros($sql);
-                    for ($i = 0; $i < $total; $i++){
-                        $categoria->verCategorias($sql, $i);
-                        $idcat = $categoria->getId();
+                    
+                    $lista = $categoria->todasCategorias();
+                    for ($i = 0; $i < count($lista); $i++){
+                        $cat=$lista[$i];
+                        $idcat = $cat->getId();
                 ?>
-                <li><a href="#"> .:<?php echo $categoria->getCategoria() ?> </a></li>
+                <li><a href="#"> .:<?php echo $cat->getCategoria() ?> </a></li>
                     <ul>
                     <?php
-                        $sql_prod = "SELECT * FROM produto WHERE id_categoria = '$idcat' ";
-                        $total_prod = $categoria->totalRegistros($sql_prod);
-                        for ($j = 0; $j < $total_prod; $j++){
-                            $produto-> verProdutos($sql_prod, $j);
+                        
+                        $cat_prod = $produto->getProdutosPorCategoria($idcat);
+                        for ($j = 0; $j < count($cat_prod); $j++){
+                            $prod = $cat_prod[$j];
                     ?>
-                    <li> <a href="#"> <?php echo $produto->getTituloProduto() ?> </a> </li>
+                    <li> <a href=""> <?php echo $prod->getTituloProduto() ?> </a> </li>
                     <?php } ?>
                     </ul>
                 <?php } ?>
@@ -34,28 +34,27 @@
     <div id="lado-direito">
         <h3 class="titulo fundo_azul">Lista de Produtos</h3>
         <section class="vitrine">
-            <?php
-                $sql = "SELECT * FROM  categoria LIMIT 0,4";
-                $total = $categoria->totalRegistros($sql);
-                for ($i=0; $i<$total; $i++){
-                    $categoria->verCategorias($sql, $i);
-                    $idcat = $categoria->getId();
-
-            ?>
-            <h2> <?php echo $categoria->getCategoria() ?> </H2>
+        <?php
+                    
+            $lista = $categoria->todasCategorias();
+            for ($i = 0; $i < count($lista); $i++){
+                $cat=$lista[$i];
+                $idcat = $cat->getId();
+        ?>
+            <h2> <?php echo $cat->getCategoria() ?> </H2>
             <ul>
-                <?php
-                    $sql_prod = "SELECT * FROM produto WHERE id_categoria = '$idcat' ";
-                    $total_prod = $categoria->totalRegistros($sql_prod);
-                    for ($j=0; $j<$total_prod; $j++){
-                        $produto-> verProdutos($sql_prod, $j);
-                ?>
+            <?php
+                
+                $cat_prod = $produto->getProdutosPorCategoria($idcat);
+                for ($j = 0; $j < count($cat_prod); $j++){
+                    $prod = $cat_prod[$j];
+            ?>
                 <li>
-                    <a href="#">
-                            <img src="admin/fotos/<?php echo $produto->getImagemProduto() ?>" alt="Conjunto">
-                            <figcaption> <?php echo $produto->getTituloProduto() ?> </figcaption>
+                    <a href="">
+                            <img src="admin/fotos/<?php echo $prod->getImagemProduto() ?>" alt="Conjunto">
+                            <figcaption> <?php echo $prod->getTituloProduto() ?> </figcaption>
                         </figure>
-                        <span> <?php echo $produto->getTituloPreco() ?> </span>
+                        <span> <?php echo $prod->getPreco() ?> </span>
                         <form action="">
                             <input type="submit" value="">
                         </form>
@@ -63,6 +62,7 @@
                 </li>
                 <?php } ?>
             </ul>
+            <?php } ?>
         </section>
     </div>
 </div>

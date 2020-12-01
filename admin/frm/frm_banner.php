@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 	$acao = $_GET["acao"];
 	$id	  = $_GET["id"];
 

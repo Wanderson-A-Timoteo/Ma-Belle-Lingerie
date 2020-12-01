@@ -20,7 +20,11 @@
 
         <div id="direito">
             <?php
-                $link = $_GET["link"];
+                if(isset($_GET["link"])){
+                  $link = $_GET["link"];
+                } else{ 
+                  $link = null;
+                }
 
                 $pag[1] = "home.php";
                 $pag[2] = "lst/lst_categoria.php";

@@ -1,5 +1,7 @@
 <?php
 
+    //error_reporting(0);
+
     include_once("admin/classes/DadosDoBanco.php");
 
     $categoria = new DadosCategoria();
@@ -25,8 +27,12 @@
 
       <section id="corpo">
         <?php
-            $link = $_GET["link"];
 
+        if(isset($_GET["link"])){
+            $link = $_GET["link"];
+        } else{ 
+          $link = null;
+        }
             $pag[1] = "home.php";
             $pag[2] = "detalhe.php";
           

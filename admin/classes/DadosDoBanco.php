@@ -14,7 +14,10 @@
         
         public function getCategoria(){
             return $this-> categoria;
-        }
+		}
+		public function setCategoria($categoria){
+			$this-> categoria = $categoria;
+		}
         public function getSlugCategoria(){
             return $this-> slug_categoria;
         }
@@ -74,6 +77,21 @@
 			$this->ativo_categoria  = mysql_result($qry,$i,"ativo_categoria");
 		}
 
+		public function todasCategorias(){
+			$sql= "SELECT * FROM categoria ";
+			$qry = self::executarSQL($sql);
+			$lista = [];
+			while($linha = self::listar($qry)){
+			
+				$categoria = new DadosCategoria();
+				$categoria->SetId($linha["id_categoria"]);
+				$categoria->SetCategoria($linha["categoria"]);
+				array_push($lista, $categoria);
+			}
+			return $lista;
+			
+		}
+
     }
 
     class DadosBanner extends conexaoMySQL{
@@ -129,45 +147,85 @@
 		}
 		public function getId(){
 			return $this-> id;
+		}
+		public function setIdCategoria( $id_categoria){
+			$this-> id_categoria =  $id_categoria;
 		}		
 		public function getIdCategoria(){
 			return $this-> id_categoria;
 		}
+		
 		public function getTituloProduto(){
 			return $this-> titulo_produto;
 		}
+		public function setTituloProduto($titulo_produto){
+			$this->titulo_produto = $titulo_produto;
+		}
+		public function setPreco($preco){
+			$this-> preco = $preco;
+		}
+
 		public function getPreco(){
 			return $this-> preco;
+		}
+		public function setAtivo($ativo_banner){
+			$this-> ativo_banner = $ativo_banner;
 		}
 		public function getAtivo(){
 			return $this-> ativo_banner;
 		}
+		public function setFabricante($fabricante){
+			$this-> fabricante = $fabricante;
+		}
 		public function getFabricante(){
 			return $this-> autor;
+		}
+		public function setModelo( $modelo){
+			$this-> modelo = $modelo;
 		}		
 		public function getModelo(){
 			return $this-> duracao;
 		}
+		public function setDescricao($descricao){
+			$this -> descricao = $descricao;
+		}
 		public function getDescricao(){
 			return $this-> descricao;
+		}
+		public function setConteudo($conteudo){
+			$this-> conteudo = $conteudo;
 		}
 		public function getConteudo(){
 			return $this-> conteudo;
 		}
+		public function setSlugProduto($slug_produto){
+			$this-> slug_produto = $slug_produto;
+		}
 		public function getSlugProduto(){
 			return $this-> slug_produto;
 		}
+		public function setAtivoProduto($ativo_produto){
+			$this-> ativo_produto = $ativo_produto;
+		}
 		public function getAtivoProduto(){
 			return $this-> ativo_produto;
+		}
+		public function setImagemProduto($imagem_produto){
+			$this-> imagem_produto = $imagem_produto;
 		}		
 		public function getImagemProduto(){
 			return $this-> imagem_produto;
 		}
-		
+		public function setCategoria($categoria){
+			$this-> categoria = $categoria;
+		}
 		public function getCategoria(){
 			return $this-> categoria;
 		}
 		
+		public function setSlugCategoria($slug_categoria){
+			$this-> slug_categoria = $slug_categoria;
+		}
 		public function getSlugCategoria(){
 			return $this-> slug_categoria;
 		}
@@ -216,9 +274,33 @@
 			$this->slug_produto  	= mysql_result($qry,$i,"slug_produto");
 			$this->ativo_produto  	= mysql_result($qry,$i,"ativo_produto");
 			$this->imagem_produto  	= mysql_result($qry,$i,"imagem_produto");
+				
+		}
+
+		public function getProdutosPorCategoria($id_categoria){
+			$sql= "SELECT * FROM produto WHERE id_categoria = " . $id_categoria;
+			$qry = self::executarSQL($sql);
+			$lista = [];
+			while($linha = self::listar($qry)){
 			
-			$this->categoria  		= mysql_result($qry,$i,"categoria");
-			$this->slug_categoria  	= mysql_result($qry,$i,"slug_categoria");	
+				$produto = new DadosProduto();
+				$produto->SetId($linha["id_produto"]);
+				$produto->SetIdCategoria($linha["id_categoria"]);
+				$produto->SetTituloProduto($linha["titulo_produto"]);
+				$produto->SetPreco($linha["preco"]);
+				$produto->SetFabricante($linha["fabricante"]);
+				$produto->SetModelo($linha["modelo"]);
+				$produto->SetDescricao($linha["descricao"]);
+				$produto->SetSlugProduto($linha["slug_produto"]);
+				$produto->SetAtivoProduto($linha["ativo_produto"]);
+				$produto->SetImagemProduto($linha["imagem_produto"]);
+
+
+
+				array_push($lista, $produto);
+			}
+			return $lista;
+			
 		}
 		
 		public function listarProdutos($sql_prod){					
