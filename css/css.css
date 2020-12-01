@@ -155,7 +155,7 @@ body {
 }
 
 .banner {
-  width: 960px;
+  width: 940px;
   height: auto;
   margin: 0 auto;
   background: #fff;
@@ -163,7 +163,7 @@ body {
 }
 
 #corpo {
-  width: 960px;
+  width: 940px;
   height: auto;
   margin: 0 auto;
   background: #fff;
@@ -293,8 +293,8 @@ body {
 
 .vitrine input {
   width: 94px;
-  height: 33px;
-  background: url(../imagens/comprar.png) no-repeat;
+  height: 43px;
+  background: url(../imagens/Comprar.png) no-repeat;
   border: 0;
   margin-top: 10px;
   cursor: pointer;
@@ -544,4 +544,20 @@ ul.menu li.active, ul.menu li.active a:hover{
 	font-size: 12px;
 	text-align: justify;
   padding:10px 7px 5px 0;
+}
+
+#sugestao{
+  margin: 10px 0;
+  padding: 5px;
+  width: 698px;
+  height: auto;
+  float: left;
+}
+
+#sugestao .titulo {
+  width: 686px;
+  height: 19px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  color: #fff;
 }

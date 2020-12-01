@@ -34,23 +34,23 @@
     <div id="lado-direito">
         <h3 class="titulo fundo_azul">Lista de Produtos</h3>
         <section class="vitrine">
-        <?php
-                    
-            $lista = $categoria->todasCategorias();
-            for ($i = 0; $i < count($lista); $i++){
-                $cat=$lista[$i];
-                $idcat = $cat->getId();
-        ?>
+            <?php
+                        
+                $lista = $categoria->todasCategorias();
+                for ($i = 0; $i < count($lista); $i++){
+                    $cat=$lista[$i];
+                    $idcat = $cat->getId();
+            ?>
             <h2> <?php echo $cat->getCategoria() ?> </H2>
             <ul>
-            <?php
-                
-                $cat_prod = $produto->getProdutosPorCategoria($idcat);
-                for ($j = 0; $j < count($cat_prod); $j++){
-                    $prod = $cat_prod[$j];
-            ?>
+                <?php
+                    
+                    $cat_prod = $produto->getProdutosPorCategoria($idcat);
+                    for ($j = 0; $j < count($cat_prod); $j++){
+                        $prod = $cat_prod[$j];
+                ?>
                 <li>
-                    <a href="">
+                    <a href="index.php?link=2&id=<?php echo $prod->getId() ?>">
                             <img src="admin/fotos/<?php echo $prod->getImagemProduto() ?>" alt="Conjunto">
                             <figcaption> <?php echo $prod->getTituloProduto() ?> </figcaption>
                         </figure>

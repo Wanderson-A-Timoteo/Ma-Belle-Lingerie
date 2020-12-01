@@ -1,3 +1,9 @@
+<?php
+    //error_reporting(0);
+    $id=$_GET["id"];
+    
+?>
+
 <div id="corpo-loja">
     <aside class="banner"> 
         <img src="imagens/banner-meio-promocao.png" alt="Banner de Promoção">
@@ -7,61 +13,62 @@
         <h2 class="fundo_azul"> Categorias </h2>
         <nav>
             <ul class="fundo_azul">
-                <li><a href="#"> Categoria 1 </a></li>
+                <?php
+                    
+                    $lista = $categoria->todasCategorias();
+                    for ($i = 0; $i < count($lista); $i++){
+                        $cat=$lista[$i];
+                        $idcat = $cat->getId();
+                ?>
+                <li><a href="#"> .:<?php echo $cat->getCategoria() ?> </a></li>
                     <ul>
-                        <li><a href="">. : Produto 1</a></li>
-                        <li><a href="">. : Produto 2</a></li>
-                        <li><a href="">. : Produto 3</a></li>
-                        <li><a href="">. : Produto 4</a></li>
+                    <?php
+                        
+                        $cat_prod = $produto->getProdutosPorCategoria($idcat);
+                        for ($j = 0; $j < count($cat_prod); $j++){
+                            $prod = $cat_prod[$j];
+                    ?>
+                    <li> <a href=""> <?php echo $prod->getTituloProduto() ?> </a> </li>
+                    <?php } ?>
                     </ul>
-
-                <li><a href="#"> Categoria 2 </a></li>
-                    <ul>
-                        <li><a href="">. : Produto 1</a></li>
-                        <li><a href="">. : Produto 2</a></li>
-                        <li><a href="">. : Produto 3</a></li>
-                        <li><a href="">. : Produto 4</a></li>
-                    </ul>
-
-                <li><a href="#"> Categoria 3 </a></li>
-                    <ul>
-                        <li><a href="">. : Produto 1</a></li>
-                        <li><a href="">. : Produto 2</a></li>
-                        <li><a href="">. : Produto 3</a></li>
-                        <li><a href="">. : Produto 4</a></li>
-                    </ul>
+                <?php } ?>
             </ul>
         </nav>
+
+        <?php
+            $prod->setId($id);
+            $prod->mostrarDados();
+        ?>
+
     </section>
 
     <div id="lado-direito">
         <section class="vitrine">
             <div id="cx-img-produto">
-                <a href="#"> <img src="imagens/conjunto-vermelho.png" alt="Conjunto Vermelho Calvin Klein"></a>
+                <a href="#"> <img src="admin/fotos/<?php echo $prod->getImagemProduto() ?>" alt="Foto do Produto" width="220" height="330"></a>
             </div>
             <div id="cx-titulo-produto">
-                <h1> <a href="">Titulo do produto</a> </h1>
+                <h1> <a href=""><?php echo $prod->getTituloProduto() ?></a> </h1>
             </div>
             <div id="cx-preco-produto">
-                <span> Valor: </span> <strong> R$ 37,90 </strong>
+                <span> Valor: </span> <strong> <?php echo $prod->getPreco() ?> </strong>
             </div>
             <div class="modelo-fabricante">
                 <h3> 
                     <span> Modelo: </span> 
-                    <strong> Conjunto Vermelho </strong>
+                    <strong> <?php echo $prod->getModelo() ?> </strong>
                 </h3>
             </div>
             <div class="modelo-fabricante">
                 <h4> 
                     <span> Fabricante: </span>
-                    <strong id="fabricante"> Calvin Klein </strong>
+                    <strong id="fabricante"> <?php echo $prod->getFabricante() ?> </strong>
                 </h4>
             </div>
             <div id="descricao-rapida">
                 <h2> Descrição rápida </h2>
                 <p>
-                    Sutiã: laterais largas <br>
-                    Calcinha: fio dental <br>
+                <?php echo $prod->getDescricao() ?>
                 </p>
             </div>
             <div id="comprar-produto">
@@ -72,27 +79,42 @@
 
             <section id="abas-geral">
                 <ul class="menu">
-                    <li><a href="#aba01">Descrição</a></li>
-                    <li><a href="#aba02">Conteúdo</a></li>
+                    <li> <h3> Descrição </h3> </li>
                 </ul>
                 <section id="box">
                     <div id="aba01" class="conteudo">
                         <article id="descricao">
-                            <h5>Descrição</52>
                             <p>
-                                Sutiã: laterais largas <br>
-                                Calcinha: fio dental <br>
-                                Detalhes: lycra <br>
-                                Alças: Fina <br>
-                                Cor: Vermelho <br>
-                                Tamanho: M <br>
-                                Peso 0.100 kg <br>
-                                Dimensões 16 × 11 × 7 cm
+                                <?php echo $prod->getConteudo() ?>
                             </p>
                         </article>
                     </div>
                 </section>
             </section>
+
+            <div id="sugestao">
+                <h3 class="titulo fundo_azul">Sugestões de compra</h3>
+                <ul>
+                    <?php
+                        
+                        $cat_prod = $produto->getProdutosPorCategoria($idcat);
+                        for ($j = 0; $j < count($cat_prod); $j++){
+                            $prod = $cat_prod[$j];
+                    ?>
+                    <li>
+                        <a href="index.php?link=2&id=<?php echo $prod->getId() ?>">
+                                <img src="admin/fotos/<?php echo $prod->getImagemProduto() ?>" alt="Imagem do produto">
+                                <figcaption> <?php echo $prod->getTituloProduto() ?> </figcaption>
+                            </figure>
+                            <span> <?php echo $prod->getPreco() ?> </span>
+                            <form action="">
+                                <input type="submit" value="">
+                            </form>
+                        </a>
+                    </li>
+                    <?php } ?>
+                </ul>
+            </div>
         </section>
     </div>
 </div>

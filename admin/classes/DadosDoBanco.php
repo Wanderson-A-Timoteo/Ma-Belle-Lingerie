@@ -178,13 +178,13 @@
 			$this-> fabricante = $fabricante;
 		}
 		public function getFabricante(){
-			return $this-> autor;
+			return $this-> fabricante;
 		}
 		public function setModelo( $modelo){
 			$this-> modelo = $modelo;
 		}		
 		public function getModelo(){
-			return $this-> duracao;
+			return $this-> modelo;
 		}
 		public function setDescricao($descricao){
 			$this -> descricao = $descricao;
@@ -247,8 +247,8 @@
 			$this->ativo_produto  	= $linha["ativo_produto"];
 			$this->imagem_produto  	= $linha["imagem_produto"];		
 			
-			$this->categoria  		= $linha["categoria"];
-			$this->slug_categoria  	= $linha["slug_categoria"];	
+			//$this->categoria  		= $linha["categoria"];
+			//$this->slug_categoria  	= $linha["slug_categoria"];	
 		}
 	
 		public function totalRegistros($sql){
