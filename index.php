@@ -5,7 +5,8 @@
     include_once("admin/classes/DadosDoBanco.php");
 
     $categoria = new DadosCategoria();
-    $produto = new DadosProduto();
+    $produto   = new DadosProduto();
+    $cliente   = new DadosCliente();
 
 
 ?>
@@ -35,6 +36,8 @@
         }
             $pag[1] = "home.php";
             $pag[2] = "detalhe.php";
+            $pag[3] = "carrinho.php";
+            $pag[4] = "frm_cliente.php";
           
             if (!empty($link)) {
                 if (file_exists($pag[$link])) {

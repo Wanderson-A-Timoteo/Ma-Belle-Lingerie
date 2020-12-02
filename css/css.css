@@ -561,3 +561,61 @@ ul.menu li.active, ul.menu li.active a:hover{
   margin-bottom: 10px;
   color: #fff;
 }
+
+#formulario-maior form{
+	width: 600px;
+	margin: 30px auto;
+	
+	
+}
+
+#formulario-maior fieldset{
+	border:1px solid #ccc;
+	padding: 0 15px 10px 15px;
+}
+
+#formulario-maior legend{
+	font: 18px Tahoma, Geneva, sans-serif;
+	color:#333;
+	font-weight: bold;
+	padding: 10px 0;
+}
+#formulario-maior label{
+	display:block;
+	padding: 3px 0;
+}
+
+#formulario-maior span{
+	display: block;
+	font: 16px;
+	color:#333;
+}
+
+#formulario-maior textarea{
+	width:560px;
+}
+#formulario-maior input{
+	padding: 3px;
+	width: 560px;
+	border: 1px solid #999;
+	font:16px Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+}
+
+#formulario-maior select{
+	padding: 3px;
+	width: 560px;
+	border: 1px solid #069;
+	font: 16px Tahoma, geneva, sans-serif;
+	color: #666;
+	font-weight: bold;
+}
+
+#formulario-maior .botao{
+	width: 120px;
+	display: block;
+	margin: 10px auto;
+	cursor: pointer;
+	background: #000;
+	color: #FFF;
+}

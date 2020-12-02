@@ -2,9 +2,9 @@
   <nav id="menu-cima">
     <ul>
       <li><a href="#">Minha Conta</a></li>
-      <li><a href="#">Meu Carrinho</a></li>
+      <li><a href="index.php?link=3">Meu Carrinho</a></li>
       <li><a href="#">Logar</a></li>
-      <li><a href="#">Cadastrar</a></li>
+      <li><a href="index.php?link=4">Cadastrar</a></li>
     </ul>
   </nav>
 </div>

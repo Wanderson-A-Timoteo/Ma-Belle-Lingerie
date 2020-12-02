@@ -2,6 +2,118 @@
 	//error_reporting(0);
     include_once("conexaoMySQL.php");
 
+	class DadosCliente extends conexaoMySQL{
+		private $id, $cliente, $endereco, $cidade, $bairro, $uf, $cep, $email, $sexo,$fone, $senha2, $ativo,
+		
+		 $numero, $ddd, $complemento;
+		
+		public function setId($id){
+			$this->id = $id;
+		}
+		public function getId(){
+			return $this-> id;
+		}		
+		public function getCliente(){
+			return $this-> cliente;
+		}
+		public function getEndereco(){
+			return $this-> endereco;
+		}
+		public function getCidade(){
+			return $this-> cidade;
+		}
+		public function getBairro(){
+			return $this-> bairro;
+		}
+		public function getUf(){
+			return $this-> uf;
+		}		
+		public function getCep(){
+			return $this-> cep;
+		}
+		public function getEmail(){
+			return $this-> email;
+		}
+		public function getSexo(){
+			return $this-> sexo;
+		}
+		public function getFone(){
+			return $this-> fone;
+		}
+		
+		public function getSenha(){
+			return $this-> senha2;
+		}
+		public function getAtivo(){
+			return $this-> ativo;
+		}
+		
+			
+		public function getNumero(){
+			return $this-> numero;
+		}		
+		public function getDDD(){
+			return $this-> ddd;
+		}
+		public function getComplemento(){
+			return $this-> complemento;
+		}
+			
+			
+			
+			
+	
+		public function mostrarDados(){
+			$sql= "SELECT * FROM  cliente WHERE id_cliente = '$this->id'";
+			$qry = self::executarSQL($sql);
+			$linha = self::listar($qry);
+			
+			$this->id  			= $linha["id_cliente"];
+			$this->cliente  	= $linha["cliente"];
+			$this->endereco  	= $linha["endereco"];
+			$this->cidade  		= $linha["cidade"];
+			$this->bairro  		= $linha["bairro"];
+			$this->uf  			= $linha["uf"];			
+			$this->cep  		= $linha["cep"];
+			$this->email  		= $linha["email"];
+			$this->sexo  		= $linha["sexo"];
+			$this->fone  		= $linha["fone"];		
+			$this->senha2  		= $linha["senha"];
+			$this->ativo  		= $linha["ativo_cliente"];
+			
+		
+			$this->numero  		= $linha["numero"];		
+			$this->ddd  		= $linha["ddd"];
+			$this->complemento 	= $linha["complemento"];
+			
+		
+		}
+		public function totalRegistros($sql){
+			$qry = self::executarSQL($sql);
+			$total= self::contaDados($qry);			
+			return $total;
+		}
+		
+		
+		public function verCliente($sql,$i){
+			$qry = mysql_query($sql);
+			
+			$this->id  			= mysql_result($qry,$i,"id_cliente");
+			$this->cliente  	= mysql_result($qry,$i,"cliente");
+			$this->endereco  	= mysql_result($qry,$i,"endereco");
+			$this->cidade  		= mysql_result($qry,$i,"cidade");
+			$this->bairro  		= mysql_result($qry,$i,"bairro");
+			$this->uf  			= mysql_result($qry,$i,"uf");			
+			$this->cep  		= mysql_result($qry,$i,"cep");
+			$this->email  		= mysql_result($qry,$i,"email");
+			$this->sexo  		= mysql_result($qry,$i,"sexo");
+			$this->fone  		= mysql_result($qry,$i,"fone");			
+			$this->senha2  		= mysql_result($qry,$i,"senha");
+			$this->ativo  		= mysql_result($qry,$i,"ativo_cliente");
+
+		}
+	}
+
     class DadosCategoria extends conexaoMySQL{
         private $id, $categoria, $slug_categoria, $ordem_categoria, $ativo_categoria;
         
