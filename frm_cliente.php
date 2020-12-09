@@ -1,13 +1,9 @@
 <?php
 	//error_reporting(0);
-
 	$id	  = $_SESSION[cliente_mabelle][IDCLIENTE];	
 	$cliente->setId($id);
 	$cliente->mostrarDados();
 	
-	
-	
-
 	$txt_cliente	= $cliente-> getCliente(); 
 	$txt_endereco	= $cliente-> getEndereco();
 	$txt_cidade 	= $cliente-> getCidade();
@@ -25,6 +21,22 @@
 	$txt_numero		= $cliente-> getNumero();
 	
 ?>
+<script type="text/javascript">
+ function  validar(){
+	if(document.form1.txt_confirma.value!=document.form1.txt_senha.value){
+		alert("O valor de confirma tem que ser igual à senha");
+		document.form1.txt_confirma.focus();
+		return(false);
+	}
+	
+	
+	if(document.form1.txt_email.value.indexOf('@') ==-1 || document.form1.txt_email.value.indexOf('.')== -1 ){
+		alert("email inválido");
+		document.form1.txt_email.focus();
+		return(false);
+	}
+}
+</script>
 <div id="formulario-maior">
 	<form action="op_cliente.php" method="post" name="form1" id="form1" onsubmit="return validar()" >
 		
@@ -49,7 +61,14 @@
 			<legend> Dados Pessoais </legend>
 			<label>
 				<span>Nome</span>
-				<input type="text" name="txt_nome" id="txt_nome" required value="<?php echo $txt_cliente ?>">
+				<input type="text" name="txt_cliente" id="txt_cliente" required value="<?php echo $txt_cliente ?>">
+			</label>
+			<label>
+				<span class="titulo">Sexo</span>
+				<select name="txt_sexo" id="txt_sexo">
+					<option value="M" <?php if($txt_sexo=="M")echo "selected" ?>> Masculino </option>
+					<option value="F" <?php if($txt_sexo=="F")echo "selected" ?>> Feminino </option>
+				</select>
 			</label>							
 			<label>
 				<span>Endereço</span>
@@ -115,6 +134,14 @@
 			<label>
 				<span>Telefone</span>
 				<input type="text" name="txt_fone" id="txt_fone" value="<?php echo $txt_fone ?>">
+			</label>
+			<label>
+				<span class="titulo">Ativar Cadastro </span>
+				<select name="txt_ativo" id="txt_ativo">
+					<option value="S" <?php if($txt_ativo=="S")echo "selected" ?>> Sim </option>
+					<option value="N" <?php if($txt_ativo=="N")echo "selected" ?>> Não </option>
+					
+				</select>
 			</label>
 			
 			

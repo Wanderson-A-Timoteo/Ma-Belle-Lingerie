@@ -28,26 +28,25 @@
     
 	if($acao=="Inserir"){
 		$cad ->setCampos("cliente, endereco, cidade, bairro, uf, cep, email, sexo, fone, senha, ativo_cliente,complemento, ddd, numero");
-		$cad ->setDados("
-					'".anti_sql_injection($txt_cliente)."', 
-					'".anti_sql_injection($txt_endereco)."', 
-					'".anti_sql_injection($txt_cidade)."', 
-					'".anti_sql_injection($txt_bairro)."',
-					'".anti_sql_injection($txt_uf)."', 
-					'".anti_sql_injection($txt_cep)."', 
-					'".anti_sql_injection($txt_email)."', 
-					'".anti_sql_injection($txt_sexo)."' ,
-					'".anti_sql_injection($txt_fone)."',
-					'".anti_sql_injection($txt_senha)."',
-					'".anti_sql_injection($txt_ativo)."',
-					'".anti_sql_injection($txt_complemento)."',
-					'".anti_sql_injection($txt_DDD)."',
-					'".anti_sql_injection($txt_numero)."'
+		
+		$cad ->setDados("'".anti_sql_injection($txt_cliente)."',".
+			"'".anti_sql_injection($txt_endereco)."',".
+			"'".anti_sql_injection($txt_cidade)."',".
+			"'".anti_sql_injection($txt_bairro)."',".
+			"'".anti_sql_injection($txt_uf)."',".
+			"'".anti_sql_injection($txt_cep)."',".
+			"'".anti_sql_injection($txt_email)."',".
+			"'".anti_sql_injection($txt_sexo)."' ,".
+			"'".anti_sql_injection($txt_fone)."',".
+			"'".anti_sql_injection($txt_senha)."',".
+			"'".anti_sql_injection($txt_ativo)."',".
+			"'".anti_sql_injection($txt_complemento)."',".
+			"'".anti_sql_injection($txt_DDD)."',".
+			"'".anti_sql_injection($txt_numero)."'");
 					
-					");
 		$cad-> inserir();
 		
-		echo "<script type='text/javascript'> location.href='../index.php?link=1' </script> ";
+		echo "<script type='text/javascript'> location.href='/php-mysql' </script> ";
 	}
 	
 	if($acao=="atualiza_cadastro"){
@@ -72,7 +71,7 @@
 		$cad->setValorPesquisa("$id");
 		$cad->alterar();
 		$_SESSION[cliente_mabelle][CLIENTE] = $txt_cliente;
-		echo "<script type='text/javascript'> location.href='../index.php?link=1' </script> ";
+		echo "<script type='text/javascript'> location.href='/php-mysql' </script> ";
 	}	
 	
 		if($acao=="Atualizar_login"){
@@ -86,7 +85,7 @@
 		
 		$_SESSION[cliente_mabelle][EMAIL] = $txt_email;
 		
-		echo "<script type='text/javascript'> location.href='../index.php?link=1' </script> ";
+		echo "<script type='text/javascript'> location.href='/php-mysql' </script> ";
 	}	
 
 
