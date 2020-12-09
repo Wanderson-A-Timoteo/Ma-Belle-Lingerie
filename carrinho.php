@@ -18,7 +18,7 @@
 				<tbody>
 					<tr>
 						<td>
-							<img src="imagems/25.png" alt="">
+							<img src="imagens/25.png" alt="">
 							<strong>Conjunto de renda preto</strong>
 						</td>
 						<td> 01 </td>
@@ -34,5 +34,10 @@
 
 			</table>
 		</form>
+	</div>
+
+	<div id="linha">
+		<img src="imagens/finalizar-compra.png"> 
+		<img src="imagens/continuar-comprando.png">
 	</div>
 </div>

@@ -562,10 +562,96 @@ ul.menu li.active, ul.menu li.active a:hover{
   color: #fff;
 }
 
+#base-carrinho{
+	width: 900px;
+	height:auto;
+	margin: 0 auto;
+	
+}
+
+#base-carrinho h2{
+	height:38px;
+	padding:5px;
+	width: 900px;	
+}
+
+#base-carrinho h3{
+	margin-top:20px;	
+	height:140px;
+}
+
+#base-carrinho h4{
+	margin-top:20px;	
+	height:30px;
+	color:#FFF;
+	font-size:20px;
+	text-align: center;
+}
+
+#linha{
+	width: 890px;
+	height:40px;
+	border:1px solid #ccc;
+	background:#fff;
+	margin-top:10px;
+	padding:5px;	
+}
+
+#linha img{
+	float:right;
+	padding-left:4px;
+	cursor:pointer;
+}
+
+/** Tabela */
+table {
+	
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+	background: #fff;
+	width: 100%;
+	margin-top: 8px;
+	text-align: center;
+	
+}
+
+table thead{
+	font: 16px Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+	color: #FFF;
+	background: #28a5d9;
+}
+
+table thead tr th{
+	padding: 3px 0;
+}
+
+table tbody{
+	font: 16px Tahoma, Geneva, sans-serif;
+	color: #000;
+	
+}
+
+table tbody tr td{
+	padding: 3px;
+	border: 1px solid #ccc;	
+	vertical-align: middle;
+}
+
+table tbody tr td img{
+	float: left;
+}
+table tbody tr td stong{
+	font-size: 10px;
+}
+table tbody tr:hover{
+	background: #f4f4f4;
+}
+/** fim tabela */
+
 #formulario-maior form{
 	width: 600px;
 	margin: 30px auto;
-	
 	
 }
 
@@ -619,3 +705,63 @@ ul.menu li.active, ul.menu li.active a:hover{
 	background: #000;
 	color: #FFF;
 }
+
+#sugestao2{	
+	width:898px;
+	height:auto;
+	border:solid 1px #ccc;
+}
+
+#sugestao2 h3{
+	width:890px;
+	height:20px;	
+	margin-bottom:10px;
+	color:#FFF;
+}
+#sugestao2 h2, #sugestao2 ul {
+	width: 891px;	
+	border:solid 1px #ccc;
+	padding: 2px;
+	background: #FBFBFB;
+}
+#sugestao2 ul{	
+	height: auto;
+	margin-top:10px;
+	margin-bottom:10px;	
+	
+}
+#sugestao2 h2{
+height: 20px;
+}
+#sugestao2 li{
+	width: 155px;
+	margin: 5px;
+	padding-bottom:10px;
+	text-align:center;
+	display:inline-block;
+	vertical-align:top;
+
+}
+#sugestao2 a{
+	color:#333;
+	font-size: 14px;
+	text-decoration:none;
+}
+#sugestao2 figure{
+	margin-bottom: 10px;
+}
+#sugestao2 span{
+	color: #FF0000;
+	font-size: 16px;
+	
+	font-weight:bold;
+}
+#sugestao2 input{
+	width:94px;
+	height:33px;
+	background: url(../imagens/comprar.png) no-repeat;
+	border:0;
+	margin-top:10px;
+	cursor:pointer;
+}
+
