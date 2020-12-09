@@ -1,5 +1,5 @@
 <?php
-	//error_reporting(0);
+	error_reporting(0);
 	include_once("conexaoMySQL.php");
 
 	class Paginacao extends conexaoMySQL{

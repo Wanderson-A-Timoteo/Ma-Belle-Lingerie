@@ -1,4 +1,5 @@
 <?php
+    error_reporting(0);
     include_once("./classes/Lista.php");
     $lista = new Lista();
     $lista->setNumPagina($_GET["pg"]);

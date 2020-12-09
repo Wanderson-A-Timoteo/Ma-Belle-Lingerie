@@ -1,4 +1,5 @@
 <?php
+    error_reporting(0);
     include_once("./classes/Lista.php");
     $lista = new Lista();
     $lista->setNumPagina($_GET["pg"]);
@@ -19,6 +20,8 @@
     </thead>
 
     <tbody>
+        <?php $lista->listaCategoria();	?>
+
         <tr>
             <td colSpan="5"> <?php $lista->geraNumeros(); ?> </td>
         </tr>

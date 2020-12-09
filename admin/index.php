@@ -32,7 +32,11 @@
                 $pag[4] = "lst/lst_banner.php";
                 $pag[5] = "frm/frm_banner.php";
                 $pag[6] = "lst/lst_produto.php";
-					      $pag[7] = "frm/frm_produto.php";
+                $pag[7] = "frm/frm_produto.php";
+                $pag[8] = "lst/lst_administrador.php";
+					      $pag[9] = "frm/frm_administrador.php";
+                
+                
 
                 if (!empty($link)) {
                     if (file_exists($pag[$link])) {

@@ -1,4 +1,5 @@
 <?php
+    error_reporting(0);
     include_once("../classes/manipulacaoDeDados.php");
     include_once("../biblio.php");
 

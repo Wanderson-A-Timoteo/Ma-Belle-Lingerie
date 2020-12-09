@@ -26,8 +26,8 @@
 <div id="cabecalho_inferior" class="fundo_principal">
   <nav id="menu-principal">
     <ul>
-      <li class="linha-vertical"><a href="#">Home</a></li>
-      <li class="linha-vertical"><a href="#">Produtos</a></li>
+      <li class="linha-vertical"><a href="index.php">Home</a></li>
+      <li class="linha-vertical"><a href="index.php">Produtos</a></li>
       <li class="linha-vertical"><a href="#">Fale Conosco</a></li>
       <li class="linha-vertical"><a href="#">Quem Somos</a></li>
     </ul>

@@ -1,5 +1,5 @@
 <?php
-	error_reporting(0);
+	//error_reporting(0);
 
 	$id	  = $_SESSION[cliente_mabelle][IDCLIENTE];	
 	$cliente->setId($id);
@@ -26,7 +26,7 @@
 	
 ?>
 <div id="formulario-maior">
-	<form action="<?php echo pg; ?>/op_cliente.php" method="post" name="form1" id="form1" onsubmit="return validar()" >
+	<form action="op_cliente.php" method="post" name="form1" id="form1" onsubmit="return validar()" >
 		
 		<fieldset>
 			<legend> Dados para acesso </legend>				

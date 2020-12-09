@@ -12,8 +12,8 @@
 
 <div id="sessao"> Administradores </div>
 <ul>
-    <li><a href="#"> Cadastrar </a> </li>
-    <li><a href="#"> Listar/Editar </a> </li>
+    <li><a href="index.php?link=9"> Cadastrar </a> </li>
+    <li><a href="index.php?link=8"> Listar/Editar </a> </li>
 </ul>
 
 <div id="sessao"> Produtos </div>

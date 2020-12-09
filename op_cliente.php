@@ -1,4 +1,5 @@
 <?php
+	//error_reporting(0);
 	session_start();	
 	include_once("admin/classes/manipulacaoDeDados.php");
 	include_once("admin/biblio.php");
