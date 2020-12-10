@@ -21,7 +21,7 @@
 
 ### Para asistir ao video acesse:
 
-[! [Ma Belle Lingerie] (http://img.youtube.com/vi/1SdyJFW_xuQ/0.jpg)] (http://www.youtube.com/watch?v=1SdyJFW_xuQ "Ma Belle Lingerie")
+[Ma Belle Lingerie](https://www.youtube.com/watch?v=1SdyJFW_xuQ&t=7s)
 
 ## 🚀 Tecnologias
 
