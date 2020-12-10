@@ -17,10 +17,8 @@
 <br>
 
 <p align="center">
-  <img alt="Happy" src=".github/home.png" width="100%">
+  ![Ma Belle Lingerie](https://github.com/Wanderson-A-Timoteo/php-mysql/blob/main/.github/Ma-Belle-Lingerie.gif)
 </p>
-
-![Ma Belle Lingerie](https://github.com/Wanderson-A-Timoteo/php-mysql/blob/main/.github/Ma-Belle-Lingerie.gif)
 
 ### Para asistir ao video acesse:
 
