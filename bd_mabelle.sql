@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09-Dez-2020 às 04:28
+-- Tempo de geração: 10-Dez-2020 às 02:49
 -- Versão do servidor: 10.4.13-MariaDB
 -- versão do PHP: 7.4.8
 
@@ -137,7 +137,12 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`id_cliente`, `cliente`, `endereco`, `cidade`, `bairro`, `uf`, `cep`, `email`, `senha`, `ativo_cliente`, `fone`, `sexo`, `numero`, `ddd`, `complemento`) VALUES
-(10, 'Jeane Timoteo', 'Rua 10', 'Cuiabá', 'Centro Norte', 'Mato Grosso', '78000000', 'jeane@gmail.com', '12345', 'S', '33210101', 'F', '1000', 65, 'Edificio Portinari, Apt 100 ');
+(10, 'Jeane Timoteo', 'Rua 10', 'Cuiabá', 'Centro Norte', 'Mato Grosso', '78000000', 'jeane@gmail.com', '12345', 'S', '33210101', 'F', '1000', 65, 'Edificio Portinari, Apt 100 '),
+(11, '', 'Rua 10', 'Cuiaba', 'Centro Norte', 'MT', '78088-000', 'ryan@gmail.com', '12345', '', '33220101', '', '', 0, ''),
+(12, 'Maria Almeida', 'Rua 10', 'Cuiaba', 'Centro norte', 'MT', '78088-000', 'maria@gmail.com', '12345', '', '33220101', '', '', 0, ''),
+(13, 'João da Silva', 'Rua da paz', 'Cuiabá', 'Boa Esperança', 'MT', '78088-000', 'joao@hotmail.com', '12345', '', '36620101', 'M', '', 0, ''),
+(14, 'José de Souza', 'Rua 20', 'Cuiaba', 'Jardim das Americas', 'MT', '78000000', 'jose@uol.com.br', '12345', '', '36756610', 'M', '', 0, ''),
+(15, 'Ribamar Sousa', 'Rua Dom Pedro I', 'Bonito', 'Cidade Alta', 'MG', '78088-000', 'ribamar@gmail.com', '12345', 'S', '21334678', 'M', '', 0, '');
 
 -- --------------------------------------------------------
 
@@ -315,7 +320,7 @@ ALTER TABLE `categoria`
 -- AUTO_INCREMENT de tabela `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id_cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de tabela `itens_venda`
