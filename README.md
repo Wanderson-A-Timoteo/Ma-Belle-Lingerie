@@ -16,9 +16,8 @@
 
 <br>
 
-<p align="center">
-  ![Ma Belle Lingerie](https://github.com/Wanderson-A-Timoteo/php-mysql/blob/main/.github/Ma-Belle-Lingerie.gif)
-</p>
+![Ma Belle Lingerie](https://github.com/Wanderson-A-Timoteo/php-mysql/blob/main/.github/Ma-Belle-Lingerie.gif)
+
 
 ### Para asistir ao video acesse:
 
