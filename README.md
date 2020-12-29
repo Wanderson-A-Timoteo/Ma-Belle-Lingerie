@@ -39,7 +39,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-A Ma Belle Lingerie é uma loja virtual para venda de produtos femininos, foi desenvolvida como projeto final para a disciplina Programação em Ambiente Web I 💜
+A Ma Belle Lingerie é uma loja virtual para venda de produtos femininos, foi desenvolvida como projeto final para a disciplina Programação em Ambiente Web I
+O projeto não esta finalizado, foi desenvolvido partes da loja, para cumprir os requisitos da avaliação💜
 
 
 ---
